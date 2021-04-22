@@ -1,0 +1,6 @@
+{
+  "name": "PrintOperate",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./PrintOperate.js"
+}

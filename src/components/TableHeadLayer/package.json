@@ -1,0 +1,6 @@
+{
+  "name": "TableHeadLayer",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./TableHeadLayer.js"
+}

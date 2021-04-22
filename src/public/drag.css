@@ -1,0 +1,153 @@
+/* pre-built style */
+.ui-sortable {
+  display: block;
+  position: relative;
+  overflow: visible;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.ui-sortable:before,
+.ui-sortable:after{
+  content: " ";
+  display: table;
+}
+
+.ui-sortable:after{
+  clear: both;
+}
+
+.ui-sortable .ui-sortable-item {
+  float: left;
+  cursor: move;
+}
+
+.ui-sortable .ui-sortable-item.ui-sortable-dragging {
+  position: absolute;
+  z-index: 1688;
+  box-shadow:1px 1px 4px grey ;
+}
+
+.ui-sortable .ui-sortable-placeholder {
+  display: none;
+}
+
+.ui-sortable .ui-sortable-placeholder.visible {
+  display: block;
+  z-index: -1;
+}
+
+.ui-sortable .ui-sortable-placeholder.visible {
+  opacity: .4;
+  -ms-filter: opacity(alpha=40);
+  border: 1px #ccc dashed;
+  background-color: #fafafa;
+}
+
+.ui-sortable.full-width .ui-sortable-item{
+  width: 100%;
+}
+
+
+.mission-container {
+  width: 100%;
+  padding: 10px;
+}
+
+.mission.ui-sortable-item {
+  display: block;
+  width: 100%;
+  /* padding: 5px 5px;
+  margin-bottom: 5px; */
+  /* text-align: center; */
+}
+
+.mission-subject-side {
+	width:0%;
+	margin: auto;
+	display: inline-block;
+}
+
+.mission-subject-pre {
+  width: 350px;
+	margin-left: 10px;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.mission-subject {
+  padding: 5px;
+  width:250px;
+  border:1px #eee solid;
+  margin: auto;
+  display: inline-block;
+}
+
+.mission-subject-tips{
+  display: inline-block;
+  width: 100%;
+  color: #bbb;
+}
+
+.mission-subject-delete{
+  /* display: inline-block; */
+  padding-top: 4px;
+  float: left;
+  margin-left: 10px;
+	position: relative;
+	cursor: pointer;
+}
+
+.mission-optional-pre {
+  width: 105px;
+	margin-left: 10px;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+/* .mission-subject-drag{
+    padding-top: 4px;
+    float: right;
+    margin-right: 10px;
+	position: relative;
+} */
+
+
+.sort-container {
+  width: 108%;
+  margin-left: -15px
+}
+
+.sort.ui-sortable-item {
+  float: none;
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.sort-subject-checkbox{
+  margin-left: 15px;
+}
+
+.sort-subject-drag{
+    display: inline-block;
+    padding-top: 4px;
+    float :right;
+    margin-right: 10px;
+}
+
+.react-resizable {
+  position: relative;
+  background-clip: padding-box;
+}
+
+.react-resizable-handle {
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  bottom: 0;
+  right: -5px;
+  cursor: col-resize;
+  z-index: 1;
+}

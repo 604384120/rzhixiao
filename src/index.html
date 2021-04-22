@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta content="webkit" name="renderer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ant Design Admin</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="drag.css" />
+  <link rel="icon" href="https://t.alipayobjects.com/images/T1QUBfXo4fXXXXXXXX.png" type="image/x-icon">
+  <SCRIPT LANGUAGE="vbscript">
+    <!--连接-->
+    Sub button1_onclick   
+      Dim vSign
+      vSign=DCellWeb1.PConnect
+      msgbox(vSign)
+      if vSign=1 then
+        Text1.Value="连接成功"
+      else
+        Text1.Value="连接失败"
+      end if
+    End Sub
+    <!--断开-->
+    Sub button2_onclick  
+      DCellWeb1.PDisConnect
+    End Sub
+    <!--自动登录-->
+    Sub button3_onclick  
+       Dim User,Mm,Tzh,vSign
+       User=Text2.Value
+       Mm=Text3.Value
+       Tzh=Text4.Value
+       vSign=DCellWeb1.PAdvConnect(User,Mm,Tzh)
+      msgbox(vSign)
+    End Sub
+    <!--取卡号-->
+    Sub button4_onclick  
+       Dim vRes,vLen
+       vLen=DCellWeb1.PGetCardh(vRes)
+       Text5.Value=Left(vRes,vLen)
+       msgbox(Left(vRes,vLen))
+    End Sub
+    <!--取开票人-->
+    Sub button5_onclick  
+       Dim vRes,vLen
+       vLen=DCellWeb1.PGetKpr(vRes)
+       Text6.Value=Left(vRes,vLen)
+        msgbox(Left(vRes,vLen))
+    End Sub
+    <!--当前票据类型-->
+    Sub button6_onclick  
+       Dim vRes,vLen
+       vLen=DCellWeb1.PGetCurPj("",vRes)
+       Text7.Value=Left(vRes,vLen)
+       msgbox(Left(vRes,vLen))
+    End Sub
+    <!--作废-->
+    Sub button8_onclick  
+       Dim vRes,vLen,vTj
+       vTj=Text9.value
+       vLen=DCellWeb1.PDelPj(vTj,vRes)
+       Text10.Value=Left(vRes,vLen)
+    End Sub
+    <!--根据受理号返回票据信息-->
+    Sub button9_onclick  
+       Dim vRes,vLen,vTj
+       vTj=Text11.value
+       vLen=DCellWeb1.PFindPh(vTj,vRes)
+       Text12.Value=Left(vRes,vLen)
+    End Sub
+    <!--转入开票-->
+    Sub button7_onclick  
+       Dim vPrnMode,vLen,vStr,vRes
+       vPrnMode=s1.value
+       vStr=List2.outerText
+       vLen=DCellWeb1.PZrPj(vStr,vPrnMode,"","",vRes)
+       Text13.Value=Left(vRes,vLen)
+    End Sub
+    </SCRIPT>
+  <!--[if lte IE 10]>
+      <script
+        src="https://as.alipayobjects.com/g/component/??console-polyfill/0.2.2/index.js,media-match/2.0.2/media.match.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+<div id="root"></div>
+
+<script src="index.js"></script>
+<script src="//at.alicdn.com/t/font_c4y7asse3q1cq5mi.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "UserStatusSelect",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./UserStatusSelect.js"
+}

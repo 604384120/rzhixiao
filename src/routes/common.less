@@ -1,0 +1,233 @@
+.sortCol{
+    padding:6px 0 5px 0;
+    display:inline-block;
+    width: 100%
+}
+
+.sortText{
+    margin-right:6px;
+    display:inline-block;
+    width: 68px;;
+    text-align:right;
+}
+
+.sortNorm{
+    margin-right: 6px;
+    display: inline-block;
+    width: 68px;
+    text-align: right;
+}
+
+.sortSelect{
+    width: calc(~"100% - 100px");
+    display:inline-block
+}
+
+.sortSelectMuti{
+    width: calc(~"100% - 100px");
+    display:inline-block;
+    margin-bottom: 5px
+}
+
+.sortTextW{
+    margin-right:6px;
+    display:inline-block;
+    width:68px;
+    text-align:right;
+}
+
+.userInfoAttrTD{
+    border: 1px solid #e8e8e8;
+    text-align: right;
+    padding-right: 20px;
+    height: 50px;
+    background-color: #fafafa;
+    width: 19%;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.userInfoAttrValueTD{
+    border: 1px solid #e8e8e8;
+    padding-left: 20px;
+    padding-right: 20px;
+    width:31%;
+    font-size: 14px;
+}
+
+.spinningBox{
+    width: 100%;
+    height: 38px;
+    position: relative;
+    .spinning{
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        margin-left: -12px;
+        margin-top: -16px;
+    }
+}
+
+.peopleNum{
+    height: 22px;
+    font-size: 15px;
+    color: #adadad;
+}
+
+.peopleNums{
+    font-size: 12px;
+    color: #adadad;
+}
+
+
+.queryBox{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.reset{
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.inquery{
+    width: 60px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.more{
+    line-height: 32px;
+    margin-right: -20px;
+}
+
+.masking{
+    background-color:rgba(240, 242, 245, 0.5);
+    z-index:800;
+    position:absolute;
+    width:100%;
+    height:100%;
+    margin:-24px;
+}
+
+.fixedTable{
+    table{
+        table-layout: fixed;
+    }
+
+    table td{
+        height:20px;
+        @-moz-document url-prefix() {height:100%;};
+        padding: 8px 5px !important;
+    }
+
+    .childTablePanel{
+        padding: 0 !important;
+    }
+
+    .childTablePanel div{
+        height: 100%
+    }
+
+    .childTablePanel>div{
+        height: 100%;
+    }
+
+    .childTablePanel table{
+        height: 100%;
+        border: 0;
+        width: 100%;
+    };
+    
+    .childTablePanel table tr:last-child td{
+        border-bottom: 0;
+    }
+
+    .childTablePanel table tr td:last-child{
+        border-right: 0;
+    }
+}
+
+.formatTable{
+    thead tr td{
+        padding: 8px 0;
+    }
+    tbody tr td{
+        padding: 8px 0;
+    }
+}
+
+.structItemTable table{
+    table-layout: fixed;
+}
+
+.clickRowStyl{
+    background-color: #fafafa
+}
+
+
+.table-panel{
+    display: table;
+    width: 100%;
+  }
+  
+  .table-cell{
+    display: table-cell;
+  }
+  
+  .table-left{
+    width: 8.5%;
+    min-width: 240px;
+  }
+  
+  .table-center{
+    padding: 0 20px;
+  }
+  
+  .table-right{
+    width: 8.5%;
+    min-width: 240px;
+  }
+//  ---打印设置和票据设计start---
+  .pageTemp{
+	overflow-x: auto;
+}
+
+.active_input{
+	border-color: #40a9ff 
+}
+
+@page{
+	.test{
+		visibility:none;
+	}	
+}
+
+.space{
+	margin: 15px 0 15px 0;
+}
+
+.titleBg{
+	background: rgba(228,228,228,.4);
+	padding: 10px;
+}
+
+.beforeInp{
+	width: 22%;
+	text-align: center;
+	display: inline-block;
+	margin-right: 20px;
+}
+//  ---打印设置和票据设计end---
+
+.inputRed:hover,.inputRed,.ant-input-group-wrapper:hover,.ant-input-group-wrapper .ant-input-group:hover,.inputRed:focus,.ant-input-group-wrapper:focus,.ant-input-group-wrapper .ant-input-group:focus{
+    border: 1px solid red !important;
+    box-shadow:  0px 0px 2px red;//边框内阴影
+}
+
+td.treeLeft{
+    text-align: left !important;
+}
